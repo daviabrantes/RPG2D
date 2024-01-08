@@ -7,9 +7,11 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [Header("Config")]
     [SerializeField] private PlayerStats stats;
 
-    private void Update()
-    {
+    private PlayerAnimations playerAnimations;
 
+    private void Awake()
+    {
+        playerAnimations = GetComponent<PlayerAnimations>();
     }
 
     public void TakeDamage(float amount)
@@ -17,12 +19,12 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         stats.Health -= amount;
         if (stats.Health < 0f)
         {
-
+            PlayerDead();
         }
     }
 
     private void PlayerDead()
     {
-
+        playerAnimations.SetDeadAnimation();
     }
 }
