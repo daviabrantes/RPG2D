@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 1175631188}
   - component: {fileID: 1175631192}
   - component: {fileID: 1175631191}
+  - component: {fileID: 1175631193}
   m_Layer: 0
   m_Name: Player_Ninja
   m_TagString: Untagged
@@ -390,6 +391,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c475f62a7a0234c9b28767eca4fc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1175631193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175631185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b0bedff899fd3429b907aa5ae2f7f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 3cbdb968144948846a850d2efb34867c, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
