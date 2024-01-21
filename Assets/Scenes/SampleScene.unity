@@ -1484,6 +1484,7 @@ GameObject:
   - component: {fileID: 280577762}
   - component: {fileID: 280577761}
   - component: {fileID: 280577765}
+  - component: {fileID: 280577766}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -1613,12 +1614,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280577760}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.211346, y: 12.643281, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1286964, y: -0.08385086, z: -0.47460267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 313355084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &280577765
 Animator:
@@ -1641,6 +1642,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &280577766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280577760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initState: WanderState
+  states:
+  - ID: WanderState
+    Actions:
+    - {fileID: 0}
+    Transitions: []
 --- !u!1001 &288104431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1781,6 +1800,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3958218170855968891, guid: 37927907fb5fc9b44b13bf91c859cb9c, type: 3}
   m_PrefabInstance: {fileID: 293696886}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &313355083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313355084}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313355084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313355083}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -39.08265, y: 12.727132, z: 0.47460267}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 280577764}
+  - {fileID: 2082232377}
+  - {fileID: 2121295862}
+  - {fileID: 548628542}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &319433636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3095,6 +3149,7 @@ GameObject:
   - component: {fileID: 548628540}
   - component: {fileID: 548628539}
   - component: {fileID: 548628538}
+  - component: {fileID: 548628543}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -3245,13 +3300,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548628537}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.461346, y: 12.643281, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.3786964, y: -0.08385086, z: -0.47460267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 313355084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &548628543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548628537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initState: WanderState
+  states:
+  - ID: WanderState
+    Actions:
+    - {fileID: 0}
+    Transitions: []
 --- !u!1001 &551501558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68374,6 +68447,7 @@ GameObject:
   - component: {fileID: 2082232375}
   - component: {fileID: 2082232374}
   - component: {fileID: 2082232373}
+  - component: {fileID: 2082232378}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -68524,13 +68598,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082232372}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.461346, y: 12.643281, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.3786964, y: -0.08385086, z: -0.47460267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 313355084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082232378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082232372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initState: WanderState
+  states:
+  - ID: WanderState
+    Actions:
+    - {fileID: 0}
+    Transitions: []
 --- !u!1001 &2082675129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68763,6 +68855,7 @@ GameObject:
   - component: {fileID: 2121295860}
   - component: {fileID: 2121295859}
   - component: {fileID: 2121295858}
+  - component: {fileID: 2121295863}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -68913,13 +69006,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121295857}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.961346, y: 12.643281, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.8786964, y: -0.08385086, z: -0.47460267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 313355084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2121295863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121295857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initState: WanderState
+  states:
+  - ID: WanderState
+    Actions:
+    - {fileID: 0}
+    Transitions: []
 --- !u!1001 &2124508749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69201,7 +69312,4 @@ SceneRoots:
   - {fileID: 526593629}
   - {fileID: 1171191048}
   - {fileID: 785559194}
-  - {fileID: 280577764}
-  - {fileID: 2082232377}
-  - {fileID: 2121295862}
-  - {fileID: 548628542}
+  - {fileID: 313355084}
