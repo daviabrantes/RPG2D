@@ -1485,6 +1485,7 @@ GameObject:
   - component: {fileID: 280577761}
   - component: {fileID: 280577765}
   - component: {fileID: 280577766}
+  - component: {fileID: 280577767}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -1654,12 +1655,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: WanderState
+  initState: Wander
   states:
-  - ID: WanderState
+  - ID: Wander
     Actions:
-    - {fileID: 0}
+    - {fileID: 280577767}
     Transitions: []
+--- !u!114 &280577767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280577760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6573e96f7994f47895359b5700582e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  wanderTime: 1.5
+  moveRange: {x: 2, y: 2}
 --- !u!1001 &288104431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3150,6 +3166,7 @@ GameObject:
   - component: {fileID: 548628539}
   - component: {fileID: 548628538}
   - component: {fileID: 548628543}
+  - component: {fileID: 548628544}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -3319,12 +3336,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: WanderState
+  initState: Wander
   states:
-  - ID: WanderState
+  - ID: Wander
     Actions:
-    - {fileID: 0}
+    - {fileID: 548628544}
     Transitions: []
+--- !u!114 &548628544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548628537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6573e96f7994f47895359b5700582e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  wanderTime: 1.5
+  moveRange: {x: 2, y: 2}
 --- !u!1001 &551501558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10984,7 +11016,7 @@ GameObject:
   - component: {fileID: 1175631193}
   - component: {fileID: 1175631194}
   - component: {fileID: 1175631195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player_Ninja
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -68448,6 +68480,7 @@ GameObject:
   - component: {fileID: 2082232374}
   - component: {fileID: 2082232373}
   - component: {fileID: 2082232378}
+  - component: {fileID: 2082232379}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -68617,12 +68650,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: WanderState
+  initState: Wander
   states:
-  - ID: WanderState
+  - ID: Wander
     Actions:
-    - {fileID: 0}
+    - {fileID: 2082232379}
     Transitions: []
+--- !u!114 &2082232379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082232372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6573e96f7994f47895359b5700582e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  wanderTime: 1.5
+  moveRange: {x: 2, y: 2}
 --- !u!1001 &2082675129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68856,6 +68904,7 @@ GameObject:
   - component: {fileID: 2121295859}
   - component: {fileID: 2121295858}
   - component: {fileID: 2121295863}
+  - component: {fileID: 2121295864}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -69025,12 +69074,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80aeb322987b734799f436f72ef1a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: WanderState
+  initState: Wander
   states:
-  - ID: WanderState
+  - ID: Wander
     Actions:
-    - {fileID: 0}
+    - {fileID: 2121295864}
     Transitions: []
+--- !u!114 &2121295864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121295857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6573e96f7994f47895359b5700582e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  wanderTime: 1.5
+  moveRange: {x: 2, y: 2}
 --- !u!1001 &2124508749
 PrefabInstance:
   m_ObjectHideFlags: 0
