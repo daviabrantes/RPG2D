@@ -1486,6 +1486,7 @@ GameObject:
   - component: {fileID: 280577765}
   - component: {fileID: 280577766}
   - component: {fileID: 280577767}
+  - component: {fileID: 280577768}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -1676,6 +1677,20 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1.5
   moveRange: {x: 2, y: 2}
+--- !u!114 &280577768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280577760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329215bd585cee442bdcf4ce679b75a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 1.3640099, y: 0.7644434, z: 0}
 --- !u!1001 &288104431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3167,6 +3182,7 @@ GameObject:
   - component: {fileID: 548628538}
   - component: {fileID: 548628543}
   - component: {fileID: 548628544}
+  - component: {fileID: 548628545}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -3357,6 +3373,19 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1.5
   moveRange: {x: 2, y: 2}
+--- !u!114 &548628545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548628537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329215bd585cee442bdcf4ce679b75a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
 --- !u!1001 &551501558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68481,6 +68510,7 @@ GameObject:
   - component: {fileID: 2082232373}
   - component: {fileID: 2082232378}
   - component: {fileID: 2082232379}
+  - component: {fileID: 2082232380}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -68671,6 +68701,19 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1.5
   moveRange: {x: 2, y: 2}
+--- !u!114 &2082232380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082232372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329215bd585cee442bdcf4ce679b75a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
 --- !u!1001 &2082675129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68905,6 +68948,7 @@ GameObject:
   - component: {fileID: 2121295858}
   - component: {fileID: 2121295863}
   - component: {fileID: 2121295864}
+  - component: {fileID: 2121295865}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -69095,6 +69139,19 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1.5
   moveRange: {x: 2, y: 2}
+--- !u!114 &2121295865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121295857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329215bd585cee442bdcf4ce679b75a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
 --- !u!1001 &2124508749
 PrefabInstance:
   m_ObjectHideFlags: 0
