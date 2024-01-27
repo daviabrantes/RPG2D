@@ -1487,6 +1487,7 @@ GameObject:
   - component: {fileID: 280577766}
   - component: {fileID: 280577768}
   - component: {fileID: 280577769}
+  - component: {fileID: 280577770}
   m_Layer: 6
   m_Name: Enemy_Bamboo
   m_TagString: Enemy
@@ -1661,7 +1662,16 @@ MonoBehaviour:
   - ID: Patrol
     Actions:
     - {fileID: 280577769}
-    Transitions: []
+    Transitions:
+    - Decision: {fileID: 280577770}
+      TrueState: Chase
+      FalseState: 
+  - ID: Chase
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 280577770}
+      TrueState: 
+      FalseState: Patrol
 --- !u!114 &280577768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,6 +1702,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+--- !u!114 &280577770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280577760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43029abc64fceaf4bbd9f5f80a81af3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 4
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &288104431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3185,6 +3211,7 @@ GameObject:
   - component: {fileID: 548628544}
   - component: {fileID: 548628545}
   - component: {fileID: 548628546}
+  - component: {fileID: 548628547}
   m_Layer: 6
   m_Name: Enemy_Reptile
   m_TagString: Enemy
@@ -3359,7 +3386,16 @@ MonoBehaviour:
   - ID: Wander
     Actions:
     - {fileID: 548628544}
-    Transitions: []
+    Transitions:
+    - Decision: {fileID: 548628547}
+      TrueState: Chase
+      FalseState: 
+  - ID: Chase
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 548628547}
+      TrueState: 
+      FalseState: Wander
 --- !u!114 &548628544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3401,6 +3437,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+--- !u!114 &548628547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548628537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43029abc64fceaf4bbd9f5f80a81af3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 4
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &551501558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68527,6 +68579,7 @@ GameObject:
   - component: {fileID: 2082232379}
   - component: {fileID: 2082232380}
   - component: {fileID: 2082232381}
+  - component: {fileID: 2082232382}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -68701,7 +68754,16 @@ MonoBehaviour:
   - ID: Wander
     Actions:
     - {fileID: 2082232379}
-    Transitions: []
+    Transitions:
+    - Decision: {fileID: 2082232382}
+      TrueState: Chase
+      FalseState: 
+  - ID: Chase
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 2082232382}
+      TrueState: 
+      FalseState: Wander
 --- !u!114 &2082232379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68743,6 +68805,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+--- !u!114 &2082232382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082232372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43029abc64fceaf4bbd9f5f80a81af3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 4
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &2082675129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68979,6 +69057,7 @@ GameObject:
   - component: {fileID: 2121295864}
   - component: {fileID: 2121295865}
   - component: {fileID: 2121295866}
+  - component: {fileID: 2121295867}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -69153,7 +69232,16 @@ MonoBehaviour:
   - ID: Wander
     Actions:
     - {fileID: 2121295864}
-    Transitions: []
+    Transitions:
+    - Decision: {fileID: 2121295867}
+      TrueState: Chase
+      FalseState: 
+  - ID: Chase
+    Actions: []
+    Transitions:
+    - Decision: {fileID: 2121295867}
+      TrueState: 
+      FalseState: Wander
 --- !u!114 &2121295864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69181,7 +69269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329215bd585cee442bdcf4ce679b75a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
+  points:
+  - {x: 0, y: 0, z: 0}
 --- !u!114 &2121295866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69195,6 +69284,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+--- !u!114 &2121295867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121295857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43029abc64fceaf4bbd9f5f80a81af3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 4
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &2124508749
 PrefabInstance:
   m_ObjectHideFlags: 0
