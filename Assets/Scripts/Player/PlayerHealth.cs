@@ -14,9 +14,20 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         playerAnimations = GetComponent<PlayerAnimations>();
     }
 
+    private void Update()
+    {
+        if (stats.Health <= 0f)
+        {
+            PlayerDead();
+        }
+    }
+
     public void TakeDamage(float amount)
     {
+        if (stats.Health <= 0f) return;
+
         stats.Health -= amount;
+        DamageManager.Instance.ShowDamageText(amount, transform);
         if (stats.Health < 0f)
         {
             stats.Health = 0f;
