@@ -11011,6 +11011,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d607b28d7b23a242a23231c618c60c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialWeapon: {fileID: 11400000, guid: e1599d9ffcd50834ab476ea29fa95dd1, type: 2}
+  attackPositions:
+  - {fileID: 179319530}
+  - {fileID: 1461696645}
+  - {fileID: 591713574}
+  - {fileID: 1471480191}
 --- !u!1001 &1177378524
 PrefabInstance:
   m_ObjectHideFlags: 0

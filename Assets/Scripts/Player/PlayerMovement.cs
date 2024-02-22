@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Config")]
     [SerializeField] private float speed;
 
+    public Vector2 MoveDirection => moveDirection;
+
     private PlayerAnimations playerAnimations;
     private PlayerActions actions;
     private Player player;
@@ -19,11 +21,6 @@ public class PlayerMovement : MonoBehaviour
         rigidBody2D = GetComponent<Rigidbody2D>();
         playerAnimations = GetComponent<PlayerAnimations>();
         player = GetComponent<Player>();
-    }
-
-    void Start()
-    {
-
     }
 
     void Update()
