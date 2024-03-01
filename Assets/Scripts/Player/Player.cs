@@ -7,9 +7,11 @@ public class Player : MonoBehaviour
 
     public PlayerStats Stats => stats;
     private PlayerAnimations animations;
+    public PlayerMana PlayerMana { get; private set; } 
 
     private void Awake()
     {
+        PlayerMana = GetComponent<PlayerMana>();
         animations = GetComponent<PlayerAnimations>();
     }
 
@@ -17,5 +19,6 @@ public class Player : MonoBehaviour
     {
         stats.ResetPlayer();
         animations.ResetPlayer();
+        PlayerMana.ResetMana();
     }
 }

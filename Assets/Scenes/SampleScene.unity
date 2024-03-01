@@ -68906,6 +68906,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 313355084}
     m_Modifications:
+    - target: {fileID: 507325168365075581, guid: a8d606d42bc319e449016effcaa047b7, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 655276434279735002, guid: a8d606d42bc319e449016effcaa047b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.8786964
@@ -69025,6 +69029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 313355084}
     m_Modifications:
+    - target: {fileID: 5399723504895353970, guid: 7249d26580a3ec846a4a6eb842df8db5, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7142645931822140722, guid: 7249d26580a3ec846a4a6eb842df8db5, type: 3}
       propertyPath: m_Name
       value: Enemy_Beast
@@ -69121,6 +69129,10 @@ PrefabInstance:
     - target: {fileID: 859470621518906868, guid: 090720dd58f2e3943bf992ba056f745e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024845184307927744, guid: 090720dd58f2e3943bf992ba056f745e, type: 3}
+      propertyPath: health
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5856922976328204117, guid: 090720dd58f2e3943bf992ba056f745e, type: 3}
       propertyPath: m_Name
@@ -69256,6 +69268,10 @@ PrefabInstance:
     - target: {fileID: 5847366391069179196, guid: 6fbaf07e15378734686da94d342da3f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147537870194163831, guid: 6fbaf07e15378734686da94d342da3f7, type: 3}
+      propertyPath: health
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8041069861647935020, guid: 6fbaf07e15378734686da94d342da3f7, type: 3}
       propertyPath: m_Name

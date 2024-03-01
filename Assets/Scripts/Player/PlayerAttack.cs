@@ -50,9 +50,12 @@ public class PlayerAttack : MonoBehaviour
     {
         if (currentAttackPosition != null)
         {
+            if (playerMana.CurrentMana < initialWeapon.RequiredMana) yield break;
+
             Quaternion rotation = Quaternion.Euler(new Vector3(0f, 0f, currentAttackRotation));
             Projectile projectile = Instantiate(initialWeapon.ProjectilePrefab, currentAttackPosition.position, rotation);
             projectile.Direction = Vector3.up;
+            projectile.Damage = initialWeapon.damage;
             playerMana.UseMana(initialWeapon.RequiredMana);
         }
 
