@@ -11012,6 +11012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d607b28d7b23a242a23231c618c60c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 3cbdb968144948846a850d2efb34867c, type: 2}
   initialWeapon: {fileID: 11400000, guid: 6829f57d40d001b449e925b1aab6a4cb, type: 2}
   attackPositions:
   - {fileID: 179319530}
