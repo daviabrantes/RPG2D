@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 450571167176589246}
   - component: {fileID: 5101023144963776379}
   - component: {fileID: 507325168365075581}
+  - component: {fileID: 3086808592655331397}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -429,4 +430,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2dbf6d81fdbb984a96403a9331db3f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 10
+--- !u!114 &3086808592655331397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661110694798966210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd41fb2964e7434b92c2e8f5c6bc3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expDrop: 50

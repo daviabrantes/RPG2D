@@ -37,5 +37,6 @@ public class PlayerStats : ScriptableObject
         Level = 1;
         CurrentExp = 0f;
         NextLevelExp = InitialNextLevelExp;
+        TotalExp = 0f;
     }
 }

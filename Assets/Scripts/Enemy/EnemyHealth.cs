@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -13,12 +14,14 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     private Animator animator;
     private EnemyBrain enemyBrain;
     private EnemySelector enemySelector;
+    private EnemyLoot enemyLoot;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         enemyBrain = GetComponent<EnemyBrain>();
         enemySelector = GetComponent<EnemySelector>();
+        enemyLoot = GetComponent<EnemyLoot>();
     }
 
 
@@ -27,11 +30,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         CurrentHealth -= amount;
         if (CurrentHealth <= 0f)
         {
-            animator.SetTrigger("Dead");
-            enemyBrain.enabled = false;
-            enemySelector.NoSelectionCallback();
-            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
-            OnEnemyDeadEvent?.Invoke();
+            DisableEnemy();
         }
         else 
         {
@@ -49,5 +48,15 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     void Update()
     {
         
+    }
+
+    private void DisableEnemy()
+    {
+        animator.SetTrigger("Dead");
+        enemyBrain.enabled = false;
+        enemySelector.NoSelectionCallback();
+        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        OnEnemyDeadEvent?.Invoke();
+        GameManager.Instance.AddPlayerExp(enemyLoot.ExpDrop);
     }
 }
